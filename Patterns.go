@@ -10,7 +10,7 @@ func appendString(s, st string, count int) string {
 }
 
 func main() {
-	eqTriangle()
+	square()
 }
 
 // Right Angle Triangle
@@ -88,5 +88,25 @@ func eqTriangle() {
 		fmt.Print(res)
 		fmt.Println()
 		star += "**"
+	}
+}
+
+// ******
+// *    *
+// *    *
+// *    *
+// ******
+
+func square() {
+	n := 5
+	for i := 1; i < 6; i++ {
+		for j := 1; j < 6; j++ {
+			if i == 1 || i == n || j == n || j == 1 {
+				fmt.Print("*")
+			} else {
+				fmt.Print(" ")
+			}
+		}
+		fmt.Println()
 	}
 }
